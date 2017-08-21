@@ -1,0 +1,143 @@
+h1 { font-size: 48px; }
+h2 { font-size: 24px; margin-bottom: 15px;}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 100px;
+}
+
+.container {
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	display: flex;
+	margin-left: -15px;
+	margin-right: 15px;
+}
+
+.col {
+	flex: 1;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.img.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+#header {
+	background: #EEE;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#header > .container {
+	display: flex;
+}
+
+#header nav {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 50px;
+}
+
+#header nav a {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	text-decoration: none;
+	color: #AAA;
+}
+
+#header nav a.active {
+	color: #FF4900;
+}
+
+#body {
+	padding-bottom: 50px;
+}
+
+#body > .container {
+	padding-left: 60px;
+}
+
+#body #body-highlight {
+	margin-top: 45px;
+	margin-bottom: 80px;
+	width: 100%;
+}
+
+#body #body-highlight h1 { margin: 0; }
+#body #body-highlight h2 { margin: 0; }
+
+#body #body-highlight #body-highlight-btn-wrapper {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#body #body-highlight #body-highlight-btn-wrapper div{
+	display: inline-block;
+}
+
+#body #body-highlight #body-highlight-btn-wrapper div p {
+	text-align: left;
+	font-size: 8px;
+	margin-top: 2px;
+}
+
+#body #body-highlight #btn-try-it-now	{
+	background: linear-gradient(#FBB25D 40%, #F48826 55%);
+	color: #FFF;
+	padding: 10px 30px;
+	box-shadow: none;
+	border-color: #EB8324;
+	font-size: 20px;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	bottom: 0;
+	background: #EEE;
+}
+
+
+#footer > .container {
+	display: flex;
+	align-items: center;
+}
+
+#footer nav#footer-socials {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#footer nav#footer-socials a {
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	background: #000;
+	border-radius: 5px;
+	color: #FFF;
+	margin-left: 15px;
+}
