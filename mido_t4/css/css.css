@@ -1,0 +1,144 @@
+body {
+    background-image: url('../img/bg-body.png');
+}
+
+#header {
+    background-color: #272018;
+    border-bottom: 1.5px solid #fff;
+}
+
+#header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #FFF;
+    padding-left: 10px;
+}
+
+.logo img {
+    img-responsive: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#top {
+    display: flex;
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #FFF;
+}
+
+#top img {
+    width: 100%;
+    height: 100%;
+}
+
+#top>.col-md-6 {
+    display: flex;
+    position: relative;
+    padding: 0;
+}
+
+#buyInfoBox {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    right: 5%;
+    bottom: 5%;
+}
+
+#toptxt {
+    position: absolute;
+    padding: 50px;
+    height: 100%;
+}
+
+#shadow {
+    font-family: "Gill Sans";
+    text-shadow: 2px 2px white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#info {
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+#mid {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 1.5px solid #fff;
+}
+
+#mid img {
+    width: 100%;
+    border-image: url();
+    border-bottom: 3px dotted rgb(226, 177, 65);
+}
+
+#mid .col-4 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.bgcolor1 {
+    background-color: #241b18;
+}
+
+.bgcolor2 {
+    background-color: #4a3932;
+}
+
+.tito {
+    font-family: "Gill Sans";
+    font-size: 20px;
+    color: rgb(226, 177, 65);
+}
+
+.type {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+}
+
+.type p {
+    margin: 0;
+}
+
+#bottom {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.borderbox {
+    border-right: 1px solid #000;
+}
+
+.blogbox {
+    font-family: sans-serif;
+    background-color: rgba(190, 190, 190, 1)
+}
+
+.box{
+
+}
+
+.blogbox p {
+    margin: 10px;
+}
+
+.blogDate {
+    font-size: 10px;
+}
+
+#footer {
+    background-color: rgb(226, 177, 65);
+}
