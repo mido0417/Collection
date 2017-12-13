@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.border-radius-15{
+    border-radius: 15px;
+}
+
+.box-shadow{
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.header_bar_nav{
+    li{
+        border-right: solid 1px rgba(0, 0, 0, 1);
+    }
+}
+.header_bar{
+    background-color: white;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid rgb(221, 221, 221);
+
+    .header_bar_sear{
+        input{
+            border: 1px solid #D6D6D6;
+            padding: 4px 2px 3px 30px;
+        
+        }
+        
+        i{
+            top: 9px;
+            left: 10px;
+            color: rgb(221, 221, 221)
+        }
+    }
+}
+

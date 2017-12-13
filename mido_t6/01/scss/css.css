@@ -36,7 +36,8 @@ header {
   header a {
     padding: 0px 1%; }
   header p {
-    text-align: right; }
+    text-align: right;
+    margin: 0; }
 
 main {
   background-image: url(../image/subbg.gif);
