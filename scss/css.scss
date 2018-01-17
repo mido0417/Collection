@@ -1,13 +1,46 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-
-li{
-    list-style-type: none;
+body{
+    height: 100%;
 }
 
-li::before {
-    content: "✿";
-    text-align: center;
+aside {
+    position: fixed;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 5px dashed pink;
+    color: purple;
+    background-color: white;
+
+    h1{
+        margin-bottom: 10px;
+    }
+    .aside_footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .link {
+            font-size: 30px;
+            text-align: end;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: purple;
+    }
+    ul{
+        margin: 20px;
+    }
+    li {
+        list-style-type: none;
+    }
+    li::before {
+        content: "✿";
+        text-align: center;
+    }
 }
