@@ -2,23 +2,26 @@
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     height: 100%;
 }
 
 aside {
+    z-index: 10;
     position: fixed;
     width: 20vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    outline: 5px dashed pink;
+    outline: 5px dashed purple;
     color: purple;
     background-color: white;
-
-    h1{
-        margin-bottom: 10px;
+    font-family: 'Indie Flower', cursive, sans-serif ;
+    h1 {
+        margin-bottom: 5%;
+        font-size: 30px;
     }
     .aside_footer {
         display: flex;
@@ -28,19 +31,34 @@ aside {
             font-size: 30px;
             text-align: end;
         }
+        p {
+            font-size: 25px;
+        }
     }
     a {
         text-decoration: none;
         color: purple;
     }
-    ul{
-        margin: 20px;
+    ul {
+        margin: 10%;
     }
     li {
         list-style-type: none;
+        margin: 5% 0;
+        font-size: 24px;
     }
     li::before {
         content: "✿";
         text-align: center;
     }
+}
+
+.container {
+    background-color: pink;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
 }

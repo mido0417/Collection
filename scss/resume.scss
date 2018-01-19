@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 2%;
+    width: 80vw;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    height: 100%;
+}
+
+aside {
+    z-index: 10;
+    position: fixed;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 5px dashed purple;
+    color: purple;
+    background-color: white;
+    font-family: 'Indie Flower', cursive, sans-serif;
+    h1 {
+        margin-bottom: 5%;
+        font-size: 30px;
+    }
+    .aside_footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .link {
+            font-size: 30px;
+            text-align: end;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: purple;
+    }
+    ul {
+        margin: 10%;
+    }
+    li {
+        list-style-type: none;
+        margin: 5% 0;
+        font-size: 24px;
+    }
+    li::before {
+        content: "✿";
+        text-align: center;
+    }
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+.photo {
+    width: 250px;
+    height: 315px;
+    background-image: url(../img/photo.jpg);
+    background-size: 131%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid rgba(177, 177, 177, .1);
+}
+
+.box {
+    display: flex;
+}
+
+.contact {
+    justify-content: space-around;
+    align-items: center;
+    .about {
+        margin-left: 15px;
+    }
+}
+
+.exp {
+    flex-direction: column;
+}
+
+.exp1,
+.exp2 {
+    margin: 5px 0;
+    h3 {
+        margin: 5px 0;
+    }
+    h3::before {
+        content: '• ';
+    }
+    li {
+        list-style-type: none;
+        margin: 8px 0;
+        text-indent: 30px;
+    }
+}
+
+.skill {
+    .skill-rel{
+        position: relative;
+    }
+     .skill- {
+         position: absolute;
+         top: -7px;
+         right: -7px;
+     }
+    .skillitems {
+        display: flex;
+        flex-wrap: wrap;
+       
+        .skillbox {
+            padding: 15px;
+            margin: 5px;
+            width: 150px;
+            height: 30px;
+            border: 2px solid black;
+            transition: height 0.5s linear;
+        }
+        .skill-:hover {
+            background-color: white;
+            height: 100px;
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 80vw;
+  position: absolute;
+  right: 0; }
+
+body {
+  height: 100%; }
+
+aside {
+  z-index: 10;
+  position: fixed;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 5px dashed purple;
+  color: purple;
+  background-color: white;
+  font-family: 'Indie Flower', cursive, sans-serif; }
+  aside h1 {
+    margin-bottom: 5%;
+    font-size: 30px; }
+  aside .aside_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    aside .aside_footer .link {
+      font-size: 30px;
+      text-align: end; }
+    aside .aside_footer p {
+      font-size: 25px; }
+  aside a {
+    text-decoration: none;
+    color: purple; }
+  aside ul {
+    margin: 10%; }
+  aside li {
+    list-style-type: none;
+    margin: 5% 0;
+    font-size: 24px; }
+  aside li::before {
+    content: "✿";
+    text-align: center; }
+
+h1 {
+  margin-bottom: 5px; }
+
+h2 {
+  border-bottom: 1px solid black;
+  margin: 10px 0; }
+
+.photo {
+  width: 250px;
+  height: 315px;
+  background-image: url(../img/photo.jpg);
+  background-size: 131%;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 1px solid rgba(177, 177, 177, 0.1); }
+
+.box {
+  display: flex; }
+
+.contact {
+  justify-content: space-around;
+  align-items: center; }
+  .contact .about {
+    margin-left: 15px; }
+
+.exp {
+  flex-direction: column; }
+
+.exp1,
+.exp2 {
+  margin: 5px 0; }
+  .exp1 h3,
+  .exp2 h3 {
+    margin: 5px 0; }
+  .exp1 h3::before,
+  .exp2 h3::before {
+    content: '• '; }
+  .exp1 li,
+  .exp2 li {
+    list-style-type: none;
+    margin: 8px 0;
+    text-indent: 30px; }
+
+.skill .skill-rel {
+  position: relative; }
+
+.skill .skill- {
+  position: absolute;
+  top: -7px;
+  right: -7px; }
+
+.skill .skillitems {
+  display: flex;
+  flex-wrap: wrap; }
+  .skill .skillitems .skillbox {
+    padding: 15px;
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    transition: height 0.5s linear; }
+  .skill .skillitems .skill-:hover {
+    background-color: white;
+    height: 100px;
+    z-index: 1; }
