@@ -101,7 +101,8 @@ h2 {
 .skill .skill- {
   position: absolute;
   top: -7px;
-  right: -7px; }
+  right: -7px;
+  z-index: 1; }
 
 .skill .skillitems {
   display: flex;
@@ -116,4 +117,4 @@ h2 {
   .skill .skillitems .skill-:hover {
     background-color: white;
     height: 100px;
-    z-index: 1; }
+    z-index: 2; }
