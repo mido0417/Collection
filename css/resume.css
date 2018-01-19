@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
   padding: 0;
   margin: 0; }
@@ -9,7 +10,8 @@
   padding: 2%;
   width: 80vw;
   position: absolute;
-  right: 0; }
+  right: 0;
+  font-family: 'Noto Sans TC',sans-serif; }
 
 body {
   height: 100%; }
@@ -58,42 +60,49 @@ h2 {
   border-bottom: 1px solid black;
   margin: 10px 0; }
 
-.photo {
-  width: 250px;
-  height: 315px;
-  background-image: url(../img/photo.jpg);
-  background-size: 131%;
-  background-position: top;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  border: 1px solid rgba(177, 177, 177, 0.1); }
-
 .box {
   display: flex; }
 
 .contact {
   justify-content: space-around;
   align-items: center; }
-  .contact .about {
-    margin-left: 15px; }
+  .contact .photo {
+    width: 250px;
+    height: 315px;
+    background-image: url(../img/photo.jpg);
+    background-size: 131%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid rgba(177, 177, 177, 0.1); }
+  .contact .link {
+    margin-top: 15px;
+    display: flex; }
 
 .exp {
   flex-direction: column; }
-
-.exp1,
-.exp2 {
-  margin: 5px 0; }
-  .exp1 h3,
-  .exp2 h3 {
+  .exp .exp1,
+  .exp .exp2 {
     margin: 5px 0; }
-  .exp1 h3::before,
-  .exp2 h3::before {
-    content: '• '; }
-  .exp1 li,
-  .exp2 li {
-    list-style-type: none;
-    margin: 8px 0;
-    text-indent: 30px; }
+    .exp .exp1 h3,
+    .exp .exp2 h3 {
+      margin: 5px 0; }
+    .exp .exp1 h3::before,
+    .exp .exp2 h3::before {
+      content: '• '; }
+    .exp .exp1 li,
+    .exp .exp2 li {
+      list-style-type: none;
+      margin: 8px 0;
+      text-indent: 30px; }
+    .exp .exp1 img,
+    .exp .exp2 img {
+      margin-top: 5px; }
+
+.skill .none {
+  color: transparent;
+  transition: color 0.5s ease-in-out;
+  margin-top: 5px; }
 
 .skill .skill-rel {
   position: relative; }
@@ -112,9 +121,11 @@ h2 {
     margin: 5px;
     width: 150px;
     height: 30px;
-    border: 2px solid black;
+    border: 2px dashed black;
     transition: height 0.5s linear; }
   .skill .skillitems .skill-:hover {
     background-color: white;
     height: 100px;
     z-index: 2; }
+    .skill .skillitems .skill-:hover .none {
+      color: black; }
