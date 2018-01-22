@@ -4,27 +4,30 @@
   margin: 0; }
 
 .container {
-  background-color: pink;
   box-sizing: border-box;
-  padding: 2%;
   width: 80vw;
-  height: 100vh;
   position: absolute;
-  right: 0; }
+  right: 0;
+  background: linear-gradient(to bottom right, white, pink); }
 
-.CG .cards {
-  width: 660px;
+.CG,
+.monster {
+  border-bottom: 5px dashed purple; }
+
+.cards {
   height: 300px;
   list-style-type: none;
   position: relative;
-  padding: 20px 0;
+  margin: 15px 0px 0px 40px;
   cursor: pointer; }
-  .CG .cards .title {
-    margin: 0 0 20px; }
-    .CG .cards .title h2 {
+  .cards .title {
+    margin-bottom: 20px; }
+    .cards .title h2 {
       font-weight: 700; }
+  .cards p {
+    margin-left: 10px; }
 
-.CG .card {
+.card {
   background: #FFF;
   overflow: hidden;
   height: 200px;
@@ -34,40 +37,60 @@
   left: 0px;
   box-shadow: 1px 2px 2px 0 #aaa;
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12); }
-  .CG .card img {
+  .card img {
     max-width: 100%;
     height: auto; }
 
-.CG .card-1 {
+.card-1 {
   z-index: 1;
   transform: rotateZ(-2deg); }
 
-.CG .card-2 {
+.card-2 {
   z-index: 2;
   transform: rotateZ(-7deg);
   transition-delay: 0.05s; }
 
-.CG .card-3 {
+.card-3 {
   z-index: 3;
   transform: rotateZ(5deg);
   transition-delay: 0.1s; }
 
-.CG .card-4 {
+.card-4 {
   z-index: 4;
   transform: rotateZ(-9deg);
+  transition-delay: 0.1s; }
+
+.card-5 {
+  z-index: 5;
+  transform: rotateZ(2deg);
+  transition-delay: 0.1s; }
+
+.card-6 {
+  z-index: 6;
+  top: auto;
+  transform: rotateZ(7deg);
   transition-delay: 0.1s; }
 
 .transition .card-1 {
   transform: rotateZ(0deg); }
 
 .transition .card-2 {
-  left: 440px;
+  left: 220px;
   transform: rotateZ(0deg); }
 
 .transition .card-3 {
-  left: 220px;
+  left: 440px;
   transform: rotateZ(0deg); }
 
 .transition .card-4 {
   left: 660px;
+  transform: rotateZ(0deg); }
+
+.transition .card-5 {
+  left: 880px;
+  transform: rotateZ(0deg); }
+
+.transition .card-6 {
+  top: 330px;
+  transition: top 0.5s ease-in-out;
   transform: rotateZ(0deg); }
