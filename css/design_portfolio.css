@@ -39,23 +39,23 @@
     height: auto; }
 
 .CG .card-1 {
-  z-index: 10;
+  z-index: 1;
   transform: rotateZ(-2deg); }
 
 .CG .card-2 {
-  z-index: 9;
+  z-index: 2;
   transform: rotateZ(-7deg);
   transition-delay: 0.05s; }
 
 .CG .card-3 {
-  z-index: 8;
+  z-index: 3;
   transform: rotateZ(5deg);
   transition-delay: 0.1s; }
 
 .CG .card-4 {
-  z-index: 7;
-  transform: rotateZ(3deg);
-  transition-delay: 0.15s; }
+  z-index: 4;
+  transform: rotateZ(-9deg);
+  transition-delay: 0.1s; }
 
 .transition .card-1 {
   transform: rotateZ(0deg); }
