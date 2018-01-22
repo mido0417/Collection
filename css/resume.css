@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(../css/aside.css);
 * {
   padding: 0;
   margin: 0; }
@@ -11,47 +12,10 @@
   width: 80vw;
   position: absolute;
   right: 0;
-  font-family: 'Noto Sans TC',sans-serif; }
+  font-family: 'Noto Sans TC', sans-serif; }
 
 body {
   height: 100%; }
-
-aside {
-  z-index: 10;
-  position: fixed;
-  width: 20vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  outline: 5px dashed purple;
-  color: purple;
-  background-color: white;
-  font-family: 'Indie Flower', cursive, sans-serif; }
-  aside h1 {
-    margin-bottom: 5%;
-    font-size: 30px; }
-  aside .aside_footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    aside .aside_footer .link {
-      font-size: 30px;
-      text-align: end; }
-    aside .aside_footer p {
-      font-size: 25px; }
-  aside a {
-    text-decoration: none;
-    color: purple; }
-  aside ul {
-    margin: 10%; }
-  aside li {
-    list-style-type: none;
-    margin: 5% 0;
-    font-size: 24px; }
-  aside li::before {
-    content: "✿";
-    text-align: center; }
 
 h1 {
   margin-bottom: 5px; }

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url(../css/animation.css);
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+aside {
+  z-index: 10;
+  position: fixed;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 5px dashed purple;
+  color: purple;
+  background-color: white;
+  font-family: 'Indie Flower', cursive, sans-serif; }
+  aside h1 {
+    margin-bottom: 5%;
+    font-size: 30px; }
+  aside h1:hover {
+    animation: rubberBand .5s; }
+  aside a {
+    text-decoration: none;
+    color: purple; }
+  aside ul {
+    margin: 10%; }
+  aside li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5% 0;
+    font-size: 24px; }
+  aside li::before {
+    content: "✿";
+    text-align: center; }
+  aside li:hover {
+    animation: rubberBand .5s; }
+  aside .aside_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    aside .aside_footer .link {
+      font-size: 30px;
+      text-align: end; }
+    aside .aside_footer p {
+      font-size: 25px; }
+    aside .aside_footer a:hover {
+      animation: rubberBand .5s; }
