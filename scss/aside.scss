@@ -27,6 +27,8 @@ aside {
     }
     ul {
         margin: 10%;
+        display: flex;
+        flex-direction: column;
     }
     li {
         display: inline-block;
