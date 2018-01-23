@@ -5,10 +5,20 @@
   padding: 0;
   margin: 0; }
 
+.taebu {
+  width: 100px;
+  height: 25px;
+  background: linear-gradient(to bottom right, #6b61f8, #c0ffe7);
+  opacity: 0.4;
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  transform: rotateZ(-2deg); }
+
 .container {
   background-color: white;
   box-sizing: border-box;
-  padding: 2%;
+  padding: 30px 40px;
   width: 80vw;
   position: absolute;
   right: 0;
@@ -21,8 +31,8 @@ h1 {
   margin-bottom: 5px; }
 
 h2 {
-  border-bottom: 1px solid black;
-  margin: 10px 0; }
+  border-bottom: 3px dotted black;
+  margin: 20px 0; }
 
 .box {
   display: flex; }
@@ -38,10 +48,16 @@ h2 {
     background-position: top;
     background-repeat: no-repeat;
     border-radius: 10px;
-    border: 1px solid rgba(177, 177, 177, 0.1); }
+    border: 1px solid rgba(177, 177, 177, 0.1);
+    position: relative; }
   .contact .link {
     margin-top: 15px;
     display: flex; }
+    .contact .link ul {
+      list-style-type: none;
+      margin-right: 35px; }
+      .contact .link ul li {
+        margin: 5px 0; }
 
 .exp {
   flex-direction: column; }
@@ -81,10 +97,10 @@ h2 {
   display: flex;
   flex-wrap: wrap; }
   .skill .skillitems .skillbox {
-    padding: 15px;
+    padding: 8px;
     margin: 5px;
-    width: 150px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     border: 2px dashed black;
     transition: height 0.5s linear; }
   .skill .skillitems .skill-:hover {
