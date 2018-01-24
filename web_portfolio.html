@@ -17,6 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/web_portfolio.css">
     <link rel="stylesheet" href="icomoon/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Web Portfolio</title>
 </head>
 
@@ -31,7 +32,6 @@
             <a href="index.html">
                 <h1>HELLO, MIDO</h1>
             </a>
-    
             <li>
                 <a href="resume.html">About</a>
             </li>
@@ -55,12 +55,133 @@
     </aside>
 
     <div class="container">
+        <h1>切版練習</h1>
+        <div class="exercise">
+            <ul class="one">
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudio/mido_t1/T1_02/index.html" target="_blank">
+                        <div class="img img01"></div>
+                        <span>
+                            切版練習01
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudio/mido_t2/index.html" target="_blank">
+                        <div class="img img02"></div>
+                        <span>
+                            切版練習02
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudi/mido_t3/index.html" target="_blank">
+                        <div class="img img03"></div>
+                        <span>
+                            切版練習03
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudi/mido_t4/index.html" target="_blank">
+                        <div class="img img04"></div>
+                        <span>
+                            切版練習04
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudi/mido_t5/index.html" target="_blank">
+                        <div class="img img05"></div>
+                        <span>
+                            切版練習05
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mido0417.github.io/GoodideasStudi/mido_t6/index.html" target="_blank">
+                        <div class="img img06"></div>
+                        <span>
+                            切版練習06
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
     </div>
 
 
 
 
 
+    <script>
+        /* 有的浏览器第一次加载不会动画  刷新当前页面一次 可以不加的*/
+        function reurl() {
+            url = location.href;
+            var times = url.split("?");
+            if (times[1] != 1) {
+                url += "?1";
+                self.location.replace(url);
+            }
+        }
+        onload = reurl;
+        /* 有的浏览器第一次加载不会动画  刷新当前页面一次 */
 
+        $(document).ready(function () {
+            var box0 = $(".exercise"),
+                v0 = 0.8; //这里添加滚动的对象和其速率
+            var box1 = $(".two"),
+                v1 = 1;
+            Rin(box0, v0);
+            Rin(box1, v1);
+
+            function Rin($Box, v) { //$Box移动的对象，v对象移动的速率
+                var $Box_ul = $Box.find("ul"),
+                    $Box_li = $Box_ul.find("li"),
+                    $Box_li_span = $Box_li.find("span", "a"),
+                    left = 0,
+                    s = 0,
+                    timer; //定时器
+
+                $Box_li.each(function (index) {
+                    $($Box_li_span[index]).width($(this).width()); //hover
+                    s += $(this).outerWidth(true); //即要滚动的长度
+                })
+
+                window.requestAnimationFrame = window.requestAnimationFrame || function (Tmove) {
+                    return setTimeout(Tmove, 1000 / 60)
+                };
+                window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+                if (s >= $Box.width()) { //如果滚动长度超出Box长度即开始滚动，没有的话就不执行滚动
+                    $Box_li.clone(true).appendTo($Box_ul);
+                    Tmove();
+
+                    function Tmove() {
+                        //运动是移动left  从0到-s;（个人习惯往左滚）
+                        left -= v;
+                        if (left <= -s) {
+                            left = 0;
+                            $Box_ul.css("left", left)
+                        } else {
+                            $Box_ul.css("left", left)
+                        }
+                        timer = requestAnimationFrame(Tmove);
+                    }
+                    $Box_ul.hover(function () {
+                        cancelAnimationFrame(timer)
+                    }, function () {
+                        Tmove()
+                    })
+                }
+
+            }
+        })
+    </script>
 </body>
+
 </html>
