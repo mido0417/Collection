@@ -20,43 +20,46 @@ ul {
 }
 
 .exercise {
-    margin: auto;
-    height: 175px;
-    width: 900px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    ul {
-        display: flex;
-        height: 160px;
+    margin-bottom: 10px;
+    .one {
+        margin: auto;
+        height: 175px;
         width: 900px;
-        position: absolute;
-        left: 0;
-        li {
-            margin: 5px;
-            width: 160px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        ul {
+            display: flex;
             height: 160px;
-            border-radius: 5px;
-            position: relative;
-            span {
+            width: 900px;
+            position: absolute;
+            left: 0;
+            li {
+                margin: 5px;
                 width: 160px;
-                height: 0;
-                display: block;
-                background-color: rgba(0, 0, 0, .4);
-                position: absolute;
-                bottom: 0;
-                color: #fff;
-                font-size: 0px;
-            }
-        }
-        li:hover {
-            span {
                 height: 160px;
-                line-height: 160px;
-                font-size: 20px;
-                text-align: center;
-                transition: all 0.7s;
                 border-radius: 5px;
+                position: relative;
+                span {
+                    width: 160px;
+                    height: 0;
+                    display: block;
+                    background-color: rgba(0, 0, 0, .4);
+                    position: absolute;
+                    bottom: 0;
+                    color: #fff;
+                    font-size: 0px;
+                }
+            }
+            li:hover {
+                span {
+                    height: 160px;
+                    line-height: 160px;
+                    font-size: 20px;
+                    text-align: center;
+                    transition: all 0.7s;
+                    border-radius: 5px;
+                }
             }
         }
     }
@@ -72,7 +75,7 @@ ul {
         border-radius: 5px;
     }
     .img01 {
-        background-image: url(https://i.imgur.com/n8i068I.jpg);
+        background-image: url(https://mido0417.github.io/GoodideasStudio/mido_t1/template1.png);
     }
     .img02 {
         background-image: url(https://raw.githubusercontent.com/mido0417/GoodideasStudio/master/mido_t2/Template_2.png);
@@ -88,5 +91,14 @@ ul {
     }
     .img06 {
         background-image: url(https://mido0417.github.io/GoodideasStudio/mido_t6/01/template_6.png);
+    }
+}
+
+.css{
+    table{
+        img{
+            width: 150px;
+            height: 100px;
+        }
     }
 }

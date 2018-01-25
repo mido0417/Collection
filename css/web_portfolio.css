@@ -17,40 +17,42 @@ ul {
   list-style-type: none; }
 
 .exercise {
-  margin: auto;
-  height: 175px;
-  width: 900px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px; }
-  .exercise ul {
-    display: flex;
-    height: 160px;
+  margin-bottom: 10px; }
+  .exercise .one {
+    margin: auto;
+    height: 175px;
     width: 900px;
-    position: absolute;
-    left: 0; }
-    .exercise ul li {
-      margin: 5px;
-      width: 160px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px; }
+    .exercise .one ul {
+      display: flex;
       height: 160px;
-      border-radius: 5px;
-      position: relative; }
-      .exercise ul li span {
+      width: 900px;
+      position: absolute;
+      left: 0; }
+      .exercise .one ul li {
+        margin: 5px;
         width: 160px;
-        height: 0;
-        display: block;
-        background-color: rgba(0, 0, 0, 0.4);
-        position: absolute;
-        bottom: 0;
-        color: #fff;
-        font-size: 0px; }
-    .exercise ul li:hover span {
-      height: 160px;
-      line-height: 160px;
-      font-size: 20px;
-      text-align: center;
-      transition: all 0.7s;
-      border-radius: 5px; }
+        height: 160px;
+        border-radius: 5px;
+        position: relative; }
+        .exercise .one ul li span {
+          width: 160px;
+          height: 0;
+          display: block;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          bottom: 0;
+          color: #fff;
+          font-size: 0px; }
+      .exercise .one ul li:hover span {
+        height: 160px;
+        line-height: 160px;
+        font-size: 20px;
+        text-align: center;
+        transition: all 0.7s;
+        border-radius: 5px; }
 
 .exercise .img {
   width: 160px;
@@ -61,7 +63,7 @@ ul {
   border-radius: 5px; }
 
 .exercise .img01 {
-  background-image: url(https://i.imgur.com/n8i068I.jpg); }
+  background-image: url(https://mido0417.github.io/GoodideasStudio/mido_t1/template1.png); }
 
 .exercise .img02 {
   background-image: url(https://raw.githubusercontent.com/mido0417/GoodideasStudio/master/mido_t2/Template_2.png); }
@@ -77,3 +79,7 @@ ul {
 
 .exercise .img06 {
   background-image: url(https://mido0417.github.io/GoodideasStudio/mido_t6/01/template_6.png); }
+
+.css table img {
+  width: 150px;
+  height: 100px; }
