@@ -16,6 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Hello,Mido!</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<link rel="stylesheet" href="icomoon/style.css">
 </head>
@@ -26,7 +27,7 @@
 			<a href="index.html">
 				<h1>HELLO, MIDO</h1>
 			</a>
-	
+
 			<li>
 				<a href="resume.html">About</a>
 			</li>
@@ -49,9 +50,55 @@
 		</div>
 	</aside>
 
+	<!-- 手機版配置開始 -->
+	<header>
+		<div class="logo">
+			<a href="index.html">
+				<h1>HELLO, MIDO</h1>
+			</a>
+		</div>
+		<ul class="menu">
+			<li>
+				<a href="resume.html">About</a>
+			</li>
+			<li>
+				<a href="web_portfolio.html">Web Portfolio</a>
+			</li>
+			<li>
+				<a href="design_portfolio.html">Design Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Photo</a>
+			</li>
+		</ul>
+		<a href="#" class="showmenu">
+			<div class="icon"></div>
+		</a>
+	</header>
+	<!-- <div class="container_mobile"></div> -->
+	<!-- 手機版配置結束 -->
+
 	<div class="container">
+		<p>歡迎來到Hello, Mido</p>
+		<p>這裡存放許多Mido在學習路上的作品與練習</p>
+
 	</div>
 
 
+
+
+	<script>
+		// $(document).ready(function () {
+		// 	$('.showmenu').on('click', function (e) {
+		// 		e.preventDefault();
+		// 		$('header').toggleClass('menu-show');
+		// 	});
+		// });
+
+		$('.showmenu').click(function () {
+				$('body').toggleClass('menu-show');
+			});
+	</script>
 </body>
+
 </html>

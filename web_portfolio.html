@@ -54,6 +54,33 @@
         </div>
     </aside>
 
+    <!-- 手機版開始 -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>HELLO, MIDO</h1>
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="resume.html">About</a>
+            </li>
+            <li>
+                <a href="web_portfolio.html">Web Portfolio</a>
+            </li>
+            <li>
+                <a href="design_portfolio.html">Design Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Photo</a>
+            </li>
+        </ul>
+        <a href="#" class="showmenu">
+            <div class="icon"></div>
+        </a>
+    </header>
+    <!-- 手機版結束 -->
+
     <div class="container">
         <div class="exercise">
             <h1>切版練習</h1>
@@ -112,55 +139,48 @@
         </div>
         <div class="css">
             <h1>CSS小玩意</h1>
-            <table>
-                <tr>
-                    <td>
-                        <a href="css_portfolio/cloud.html" target="_blank">
-                            <div class="img img01"></div>
-                            <span>CSS繪圖與animation</span>
-                        </a>
-                    </td>
+            <div class="css_content">
+                <div class="imgitem">
+                    <a href="css_portfolio/cloud.html" target="_blank">
+                        <div class="img img01"></div>
+                        <span>CSS繪圖與animation</span>
+                    </a>
+                </div>
 
-                    <td>
-                        <a href="css_portfolio/car.html" target="_blank">
-                            <div class="img img02"></div>
-                            <span>CSS繪圖與animation</span>
-                        </a>
-                    </td>
+                <div class="imgitem">
+                    <a href="css_portfolio/car.html" target="_blank">
+                        <div class="img img02"></div>
+                        <span>CSS繪圖與animation</span>
+                    </a>
+                </div>
 
-                    <td>
-                        <a href="css_portfolio/parallax.html" target="_blank">
-                            <div class="img img03"></div>
-                            <span>視差滾動</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="css_portfolio/masking.html" target="_blank">
-                            <div class="img img04"></div>
-                            <span>文字遮罩</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="css_portfolio/tailor.html" target="_blank">
-                            <div class="img img05"></div>
-                            <span>形狀剪裁</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a>
-                            <div></div>
-                            <span></span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+                <div class="imgitem">
+                    <a href="css_portfolio/parallax.html" target="_blank">
+                        <div class="img img03"></div>
+                        <span>視差滾動</span>
+                    </a>
+                </div>
+
+
+                <div class="imgitem">
+                    <a href="css_portfolio/masking.html" target="_blank">
+                        <div class="img img04"></div>
+                        <span>文字遮罩</span>
+                    </a>
+                </div>
+                <div class="imgitem">
+                    <a href="css_portfolio/tailor.html" target="_blank">
+                        <div class="img img05"></div>
+                        <span>形狀剪裁</span>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <div></div>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
         </div>
 
 
@@ -234,6 +254,10 @@
 
             }
         })
+
+    $('.showmenu').click(function () {
+            $('body').toggleClass('menu-show');
+        });    
     </script>
 </body>
 

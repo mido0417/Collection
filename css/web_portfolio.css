@@ -1,9 +1,13 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(../css/aside.css);
 * {
   padding: 0;
   margin: 0;
   box-sizing: content-box; }
+
+header {
+  display: none; }
 
 .container {
   box-sizing: border-box;
@@ -81,11 +85,17 @@ ul {
 .exercise .img06 {
   background-image: url(https://mido0417.github.io/GoodideasStudio/mido_t6/01/template_6.png); }
 
-.css table {
-  margin: 0 auto; }
-  .css table td {
+.css .css_content {
+  width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .css .css_content .imgitem {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
     position: relative; }
-    .css table td span {
+    .css .css_content .imgitem span {
       width: 100%;
       height: 0;
       display: block;
@@ -94,7 +104,7 @@ ul {
       bottom: 0;
       color: #fff;
       font-size: 0px; }
-  .css table td:hover span {
+  .css .css_content div:hover span {
     height: 200px;
     line-height: 200px;
     font-size: 25px;
@@ -130,3 +140,101 @@ ul {
 
 .css .img07 {
   background-image: url(); }
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box; }
+  aside {
+    display: none; }
+  header {
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    background-color: gray;
+    box-shadow: 0px 0px 2px 1px #673838;
+    padding: 0 10px;
+    position: sticky;
+    top: 0; }
+    header a {
+      text-decoration: none;
+      color: white; }
+    header .logo {
+      order: 2; }
+      header .logo h1 {
+        font-size: 20px; }
+    header .menu {
+      z-index: 100;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s;
+      margin-top: 1px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background-color: gray;
+      list-style-type: none;
+      box-shadow: 0px 0px 1px 1px rgba(158, 158, 158, 0.32); }
+      header .menu li {
+        text-align: left;
+        padding: 10px 0px 10px 20px;
+        border-bottom: 1px solid white; }
+      header .menu li::before {
+        content: "✿";
+        text-align: center; }
+    header .showmenu .icon {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      position: absolute;
+      left: 15px;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      transition-timing-function: swing; }
+    header .showmenu .icon:before,
+    header .showmenu .icon:after {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      left: 0;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing; }
+    header .showmenu .icon:before {
+      top: -9px; }
+    header .showmenu .icon:after {
+      top: 9px; }
+  .menu-show .menu {
+    max-height: 360px; }
+  .menu-show header .showmenu .icon {
+    width: 0; }
+  .menu-show header .showmenu .icon:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg); }
+  .menu-show header .showmenu .icon:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg); }
+  .container {
+    width: 100%;
+    position: static;
+    background: white;
+    overflow: hidden; }
+    .container .css .css_content {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .container .css .css_content .img {
+        border: 1px solid rgba(128, 128, 128, 0.12); } }
