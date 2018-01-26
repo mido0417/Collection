@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-Masking</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .content {
+        width: 500px;
+        height: 500px;
+        background-color: purple;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        clip-path: polygon(126% 52%, 13% 99%, 20% 60%, 30% 11%);
+        animation-name: tailor;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: 2s;
+    }
+
+    @keyframes tailor {
+
+        33% {
+            clip-path: polygon(196% 72%, 53% 99%, 10% 40%, 23% 6%);
+        }
+
+        66% {
+            clip-path: polygon(10% 40%, 23% 6%, 96% 72%, 53% 99%);
+        }
+    }
+
+    .content1 {
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    p {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis autem voluptate quidem cupiditate dolorum
+            similique doloribus quo, consectetur odit modi consequuntur accusamus perferendis, labore consequatur illum accusantium.
+            Accusamus fugit fugiat officiis harum quae odio, sint itaque animi rerum et sapiente facere. Inventore, ullam
+            corrupti, assumenda delectus quibusdam rerum nisi doloremque tempore neque, reprehenderit impedit dolorum? Vero,
+            a ab. Consequatur accusamus ipsa eaque molestias perferendis, quisquam sunt consequuntur odit reprehenderit.
+            Amet modi nulla magnam in quam dicta aspernatur ut dolor. Rem dolorum totam impedit tempora inventore! Eligendi
+            nobis expedita incidunt eos eveniet tempora molestias voluptatibus blanditiis ex enim, eum vitae.</p>
+    </div>
+    <div class="content1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, pariatur nobis, dolor ducimus vitae reprehenderit
+            accusamus itaque nostrum vero, soluta aliquam culpa minima quae id a sapiente. Aliquid corrupti, eveniet numquam
+            ipsam facere, iusto reiciendis voluptatem tempore quo cum at expedita odit ad odio blanditiis nulla quae sapiente
+            enim explicabo quidem! Incidunt fugit ipsum omnis sapiente iure repellendus a tenetur tempore eum? Eligendi praesentium
+            sit inventore exercitationem necessitatibus fugiat minima saepe ipsum accusamus, recusandae natus fuga, mollitia
+            neque aperiam! Cumque porro culpa dolorum sunt architecto velit dolorem praesentium. Accusamus possimus necessitatibus
+            a tempore qui. Sequi esse rerum velit. Consectetur, saepe?</p>
+    </div>
+</body>
+
+</html>
