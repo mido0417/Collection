@@ -11,7 +11,7 @@ header {
   display: none; }
 
 .container {
-  background-color: pink;
+  background: linear-gradient(to bottom right, white, pink);
   box-sizing: border-box;
   padding: 2%;
   width: 80vw;
@@ -102,4 +102,8 @@ header {
   .container {
     width: 100vw;
     position: static;
-    background-color: white; } }
+    background: linear-gradient(to bottom right, white, #333333);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; } }

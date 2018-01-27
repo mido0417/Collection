@@ -15,6 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/resume.css">
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="icomoon/style.css">
@@ -27,7 +28,7 @@
             <a href="index.html">
                 <h1>HELLO, MIDO</h1>
             </a>
-    
+
             <li>
                 <a href="resume.html">About</a>
             </li>
@@ -49,6 +50,34 @@
             </span>
         </div>
     </aside>
+
+<!-- 手機版配置開始 -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <h1>HELLO, MIDO</h1>
+        </a>
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="resume.html">About</a>
+        </li>
+        <li>
+            <a href="web_portfolio.html">Web Portfolio</a>
+        </li>
+        <li>
+            <a href="design_portfolio.html">Design Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Photo</a>
+        </li>
+    </ul>
+    <a href="#" class="showmenu">
+        <div class="icon"></div>
+    </a>
+</header>
+<!-- <div class="container_mobile"></div> -->
+<!-- 手機版配置結束 -->
 
     <div class="container">
         <div class="contact box">
@@ -163,6 +192,14 @@
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        $('.showmenu').click(function () {
+            $('body').toggleClass('menu-show');
+        });
+    </script>
 </body>
 
 </html>
