@@ -230,8 +230,7 @@ ul {
   .container {
     width: 100%;
     position: static;
-    background: white;
-    overflow: hidden; }
+    background: white; }
     .container .css .css_content {
       width: 100%;
       flex-direction: column;
