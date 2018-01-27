@@ -194,12 +194,14 @@ header,
     display: block;
     background: white;
     overflow: hidden; }
-    .container_mobile h2 {
-      margin-left: 10px; }
   .CG_mobile,
   .monster_mobile,
   .gameUI_mobile {
     margin-bottom: 10px; }
+    .CG_mobile h2,
+    .monster_mobile h2,
+    .gameUI_mobile h2 {
+      margin-left: 10px; }
     .CG_mobile .one,
     .CG_mobile .two,
     .CG_mobile .three,
@@ -211,7 +213,7 @@ header,
     .gameUI_mobile .three {
       margin: auto;
       height: 175px;
-      width: 300px;
+      width: 100vw;
       overflow: hidden;
       position: relative;
       border-radius: 10px; }
@@ -226,7 +228,7 @@ header,
       .gameUI_mobile .three ul {
         display: flex;
         height: 160px;
-        width: 300px;
+        width: 100vw;
         position: absolute;
         left: 0; }
         .CG_mobile .one ul li,

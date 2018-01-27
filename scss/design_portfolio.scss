@@ -238,28 +238,29 @@ header,
         display: block;
         background: white;
         overflow: hidden;
-        h2{
-            margin-left: 10px;
-        }       
+            
 }
 
 .CG_mobile,
 .monster_mobile,
 .gameUI_mobile {
+    h2 {
+        margin-left: 10px;
+    }
     margin-bottom: 10px;
     .one,
     .two,
     .three {
         margin: auto;
         height: 175px;
-        width: 300px;
+        width: 100vw;
         overflow: hidden;
         position: relative;
         border-radius: 10px;
         ul {
             display: flex;
             height: 160px;
-            width: 300px;
+            width: 100vw;
             position: absolute;
             left: 0;
             li {
