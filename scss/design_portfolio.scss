@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+header,
+.container_mobile {
+    display: none;
+}
+
 .container {
     box-sizing: border-box;
     width: 80vw;
@@ -113,4 +118,232 @@
         transition: top 0.5s ease-in-out;
         transform: rotateZ(0deg);
     }
+}
+
+// 手機版開始
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    aside,
+    .container {
+        display: none;
+    }
+    header {
+        z-index: 10;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background-color: gray;
+        box-shadow: 0px 0px 2px 1px rgb(103, 56, 56);
+        padding: 0 10px;
+        position: sticky;
+        top: 0;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .logo {
+            order: 2;
+            h1 {
+                font-size: 20px;
+            }
+        }
+        .menu {
+            z-index: 100;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s;
+            margin-top: 1px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            background-color: gray;
+            list-style-type: none;
+            box-shadow: 0px 0px 1px 1px rgba(158, 158, 158, 0.32);
+            li {
+                text-align: left;
+                padding: 10px 0px 10px 20px;
+                border-bottom: 1px solid white;
+            }
+            li::before {
+                content: "✿";
+                text-align: center;
+            }
+        }
+        .showmenu {
+            .icon {
+                width: 30px;
+                height: 4px;
+                background-color: white;
+                border-radius: 2px;
+                position: absolute;
+                left: 15px;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                transition-timing-function: swing;
+            }
+            .icon:before,
+            .icon:after {
+                width: 30px;
+                height: 4px;
+                background-color: white;
+                border-radius: 2px;
+                content: "";
+                position: absolute;
+                left: 0;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -webkit-transition-timing-function: swing;
+                transition-timing-function: swing;
+            }
+            .icon:before {
+                top: -9px;
+            }
+            .icon:after {
+                top: 9px;
+            }
+        }
+    }
+    .menu-show {
+        .menu {
+            max-height: 360px;
+        }
+        header {
+            .showmenu {
+                .icon {
+                    width: 0;
+                }
+                .icon:before {
+                    -webkit-transform: translateY(9px) rotate(45deg);
+                    -ms-transform: translateY(9px) rotate(45deg);
+                    transform: translateY(9px) rotate(45deg);
+                }
+                .icon:after {
+                    -webkit-transform: translateY(-9px) rotate(-45deg);
+                    -ms-transform: translateY(-9px) rotate(-45deg);
+                    transform: translateY(-9px) rotate(-45deg);
+                }
+            }
+        }
+    }
+    .container_mobile {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        background: white;
+        overflow: hidden;
+        h2{
+            margin-left: 10px;
+        }       
+}
+
+.CG_mobile,
+.monster_mobile,
+.gameUI_mobile {
+    margin-bottom: 10px;
+    .one,
+    .two,
+    .three {
+        margin: auto;
+        height: 175px;
+        width: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        ul {
+            display: flex;
+            height: 160px;
+            width: 300px;
+            position: absolute;
+            left: 0;
+            li {
+                margin: 5px;
+                width: 160px;
+                height: 160px;
+                border-radius: 5px;
+                position: relative;
+                list-style-type: none;
+                span {
+                    width: 160px;
+                    height: 0;
+                    display: block;
+                    background-color: rgba(0, 0, 0, .4);
+                    position: absolute;
+                    bottom: 0;
+                    color: #fff;
+                    font-size: 0px;
+                }
+            }
+        }
+    }
+}
+
+.CG_mobile,
+.monster_mobile,
+.gameUI_mobile {
+    .img {
+        width: 160px;
+        height: 160px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+    .img01 {
+        background-image: url(https://i.imgur.com/n8i068I.jpg);
+    }
+    .img02 {
+        background-image: url(https://i.imgur.com/PILLnA2.jpg);
+    }
+    .img03 {
+        background-image: url(https://i.imgur.com/KX7BAd9.png);
+    }
+    .img04 {
+        background-image: url(https://i.imgur.com/EVvqd0C.jpg);
+    }
+    .img05 {
+        background-image: url(https://i.imgur.com/hy0fiFn.jpg);
+    }
+    .img06 {
+        background-image: url(http://i.imgur.com/yiGIJQF.jpg);
+    }
+    .img07 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_orig.png);
+    }
+    .img08 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_1_orig.png);
+    }
+    .img09 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_orig.png);
+    }
+    .img10 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_1_orig.png);
+    }
+    .img11 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1074069943_orig.jpg);
+    }
+    .img12 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/307145411_orig.jpg);
+    }
+    .img13 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/224211504_orig.jpg);
+    }
+    .img14 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1244538136_orig.png);
+    }
+    .img15 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/78167032_orig.png);
+    }
+    .img16 {
+        background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1720909701_orig.png);
+    }
+}
+
+
 }

@@ -51,7 +51,6 @@
     </aside>
 
     <div class="container">
-
         <div class="CG">
             <ul class="cards">
                 <li class="title">
@@ -72,9 +71,6 @@
                 <li class="card card-5">
                     <img src="https://i.imgur.com/hy0fiFn.jpg" />
                 </li>
-                <!-- <li class="card card-6">
-                    <img src="http://i.imgur.com/yiGIJQF.jpg" />
-                </li> -->
             </ul>
         </div>
 
@@ -98,6 +94,7 @@
                 <li class="card card-5">
                     <img src="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1074069943_orig.jpg" />
                 </li>
+            </ul>
         </div>
 
         <div class="gameUI">
@@ -127,10 +124,164 @@
                 </li>
             </ul>
         </div>
-
-
-
     </div>
+
+    <!-- 手機版開始 -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>HELLO, MIDO</h1>
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="resume.html">About</a>
+            </li>
+            <li>
+                <a href="web_portfolio.html">Web Portfolio</a>
+            </li>
+            <li>
+                <a href="design_portfolio.html">Design Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Photo</a>
+            </li>
+        </ul>
+        <a href="#" class="showmenu">
+            <div class="icon"></div>
+        </a>
+    </header>
+
+    <div class="container_mobile">
+        
+    </div>
+
+    <div class="CG_mobile">
+        <h2>人物繪圖</h2>
+        <div class="one">
+            <ul>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img01">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img02">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img03">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img04">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img05">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://i.imgur.com/n8i068I.jpg">
+                        <div class="img img06">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="monster_mobile">
+        <h2>怪物繪圖</h2>
+        <div class="two">
+            <ul>
+                <li>
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_orig.png">
+                        <div class="img img07"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_1_orig.png">
+                        <div class="img img08"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_orig.png">
+                        <div class="img img09"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_1_orig.png">
+                        <div class="img img10"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1074069943_orig.jpg">
+                        <div class="img img11"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="gameUI_mobile">
+        <h2>遊戲UI設計</h2>
+        <div class="three">
+            <ul>
+                <li>
+    
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/307145411_orig.jpg">
+                        <div class="img img12"></div>
+                    </a>
+    
+                </li>
+                <li>
+    
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/224211504_orig.jpg">
+                        <div class="img img13"></div>
+                    </a>
+    
+                </li>
+                <li>
+    
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1244538136_orig.png">
+                        <div class="img img14"></div>
+                    </a>
+    
+                </li>
+                <li>
+    
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/78167032_orig.png">
+                        <div class="img img15"></div>
+                    </a>
+    
+                </li>
+                <li>
+    
+                    <a href="http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1720909701_orig.png">
+                        <div class="img img16"></div>
+                    </a>
+    
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 手機版結束 -->
+
+
+
+
+
 
 
     <script>
@@ -139,6 +290,78 @@
                 $(this).toggleClass('transition');
             });
         });
+
+        $('.showmenu').click(function () {
+            $('body').toggleClass('menu-show');
+        });
+
+
+        /* 有的浏览器第一次加载不会动画  刷新当前页面一次 可以不加的*/
+        function reurl() {
+            url = location.href;
+            var times = url.split("?");
+            if (times[1] != 1) {
+                url += "?1";
+                self.location.replace(url);
+            }
+        }
+        onload = reurl;
+        /* 有的浏览器第一次加载不会动画  刷新当前页面一次 */
+
+        $(document).ready(function () {
+            var box0 = $(".one"),
+                v0 = 1; //这里添加滚动的对象和其速率
+            var box1 = $(".two"),
+                v1 = 0.8;
+            var box2 = $(".three"),
+                v2 = 1;
+
+            Rin(box0, v0);
+            Rin(box1, v1);
+            Rin(box2, v2);
+
+            function Rin($Box, v) { //$Box移动的对象，v对象移动的速率
+                var $Box_ul = $Box.find("ul"),
+                    $Box_li = $Box_ul.find("li"),
+                    $Box_li_span = $Box_li.find("span", "a"),
+                    left = 0,
+                    s = 0,
+                    timer; //定时器
+
+                $Box_li.each(function (index) {
+                    $($Box_li_span[index]).width($(this).width()); //hover
+                    s += $(this).outerWidth(true); //即要滚动的长度
+                })
+
+                window.requestAnimationFrame = window.requestAnimationFrame || function (Tmove) {
+                    return setTimeout(Tmove, 1000 / 60)
+                };
+                window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+                if (s >= $Box.width()) { //如果滚动长度超出Box长度即开始滚动，没有的话就不执行滚动
+                    $Box_li.clone(true).appendTo($Box_ul);
+                    Tmove();
+
+                    function Tmove() {
+                        //运动是移动left  从0到-s;（个人习惯往左滚）
+                        left -= v;
+                        if (left <= -s) {
+                            left = 0;
+                            $Box_ul.css("left", left)
+                        } else {
+                            $Box_ul.css("left", left)
+                        }
+                        timer = requestAnimationFrame(Tmove);
+                    }
+                    $Box_ul.hover(function () {
+                        cancelAnimationFrame(timer)
+                    }, function () {
+                        Tmove()
+                    })
+                }
+
+            }
+        })
     </script>
 </body>
 

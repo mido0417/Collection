@@ -1,8 +1,13 @@
+@charset "UTF-8";
 @import url(../css/aside.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
   padding: 0;
   margin: 0; }
+
+header,
+.container_mobile {
+  display: none; }
 
 .container {
   box-sizing: border-box;
@@ -96,3 +101,236 @@
   top: 330px;
   transition: top 0.5s ease-in-out;
   transform: rotateZ(0deg); }
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box; }
+  aside,
+  .container {
+    display: none; }
+  header {
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    background-color: gray;
+    box-shadow: 0px 0px 2px 1px #673838;
+    padding: 0 10px;
+    position: sticky;
+    top: 0; }
+    header a {
+      text-decoration: none;
+      color: white; }
+    header .logo {
+      order: 2; }
+      header .logo h1 {
+        font-size: 20px; }
+    header .menu {
+      z-index: 100;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s;
+      margin-top: 1px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background-color: gray;
+      list-style-type: none;
+      box-shadow: 0px 0px 1px 1px rgba(158, 158, 158, 0.32); }
+      header .menu li {
+        text-align: left;
+        padding: 10px 0px 10px 20px;
+        border-bottom: 1px solid white; }
+      header .menu li::before {
+        content: "✿";
+        text-align: center; }
+    header .showmenu .icon {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      position: absolute;
+      left: 15px;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      transition-timing-function: swing; }
+    header .showmenu .icon:before,
+    header .showmenu .icon:after {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      left: 0;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing; }
+    header .showmenu .icon:before {
+      top: -9px; }
+    header .showmenu .icon:after {
+      top: 9px; }
+  .menu-show .menu {
+    max-height: 360px; }
+  .menu-show header .showmenu .icon {
+    width: 0; }
+  .menu-show header .showmenu .icon:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg); }
+  .menu-show header .showmenu .icon:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg); }
+  .container_mobile {
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    background: white;
+    overflow: hidden; }
+    .container_mobile h2 {
+      margin-left: 10px; }
+  .CG_mobile,
+  .monster_mobile,
+  .gameUI_mobile {
+    margin-bottom: 10px; }
+    .CG_mobile .one,
+    .CG_mobile .two,
+    .CG_mobile .three,
+    .monster_mobile .one,
+    .monster_mobile .two,
+    .monster_mobile .three,
+    .gameUI_mobile .one,
+    .gameUI_mobile .two,
+    .gameUI_mobile .three {
+      margin: auto;
+      height: 175px;
+      width: 300px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px; }
+      .CG_mobile .one ul,
+      .CG_mobile .two ul,
+      .CG_mobile .three ul,
+      .monster_mobile .one ul,
+      .monster_mobile .two ul,
+      .monster_mobile .three ul,
+      .gameUI_mobile .one ul,
+      .gameUI_mobile .two ul,
+      .gameUI_mobile .three ul {
+        display: flex;
+        height: 160px;
+        width: 300px;
+        position: absolute;
+        left: 0; }
+        .CG_mobile .one ul li,
+        .CG_mobile .two ul li,
+        .CG_mobile .three ul li,
+        .monster_mobile .one ul li,
+        .monster_mobile .two ul li,
+        .monster_mobile .three ul li,
+        .gameUI_mobile .one ul li,
+        .gameUI_mobile .two ul li,
+        .gameUI_mobile .three ul li {
+          margin: 5px;
+          width: 160px;
+          height: 160px;
+          border-radius: 5px;
+          position: relative;
+          list-style-type: none; }
+          .CG_mobile .one ul li span,
+          .CG_mobile .two ul li span,
+          .CG_mobile .three ul li span,
+          .monster_mobile .one ul li span,
+          .monster_mobile .two ul li span,
+          .monster_mobile .three ul li span,
+          .gameUI_mobile .one ul li span,
+          .gameUI_mobile .two ul li span,
+          .gameUI_mobile .three ul li span {
+            width: 160px;
+            height: 0;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            font-size: 0px; }
+  .CG_mobile .img,
+  .monster_mobile .img,
+  .gameUI_mobile .img {
+    width: 160px;
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px; }
+  .CG_mobile .img01,
+  .monster_mobile .img01,
+  .gameUI_mobile .img01 {
+    background-image: url(https://i.imgur.com/n8i068I.jpg); }
+  .CG_mobile .img02,
+  .monster_mobile .img02,
+  .gameUI_mobile .img02 {
+    background-image: url(https://i.imgur.com/PILLnA2.jpg); }
+  .CG_mobile .img03,
+  .monster_mobile .img03,
+  .gameUI_mobile .img03 {
+    background-image: url(https://i.imgur.com/KX7BAd9.png); }
+  .CG_mobile .img04,
+  .monster_mobile .img04,
+  .gameUI_mobile .img04 {
+    background-image: url(https://i.imgur.com/EVvqd0C.jpg); }
+  .CG_mobile .img05,
+  .monster_mobile .img05,
+  .gameUI_mobile .img05 {
+    background-image: url(https://i.imgur.com/hy0fiFn.jpg); }
+  .CG_mobile .img06,
+  .monster_mobile .img06,
+  .gameUI_mobile .img06 {
+    background-image: url(http://i.imgur.com/yiGIJQF.jpg); }
+  .CG_mobile .img07,
+  .monster_mobile .img07,
+  .gameUI_mobile .img07 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_orig.png); }
+  .CG_mobile .img08,
+  .monster_mobile .img08,
+  .gameUI_mobile .img08 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no1_1_orig.png); }
+  .CG_mobile .img09,
+  .monster_mobile .img09,
+  .gameUI_mobile .img09 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_orig.png); }
+  .CG_mobile .img10,
+  .monster_mobile .img10,
+  .gameUI_mobile .img10 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/no2_1_orig.png); }
+  .CG_mobile .img11,
+  .monster_mobile .img11,
+  .gameUI_mobile .img11 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1074069943_orig.jpg); }
+  .CG_mobile .img12,
+  .monster_mobile .img12,
+  .gameUI_mobile .img12 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/307145411_orig.jpg); }
+  .CG_mobile .img13,
+  .monster_mobile .img13,
+  .gameUI_mobile .img13 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/224211504_orig.jpg); }
+  .CG_mobile .img14,
+  .monster_mobile .img14,
+  .gameUI_mobile .img14 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1244538136_orig.png); }
+  .CG_mobile .img15,
+  .monster_mobile .img15,
+  .gameUI_mobile .img15 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/78167032_orig.png); }
+  .CG_mobile .img16,
+  .monster_mobile .img16,
+  .gameUI_mobile .img16 {
+    background-image: url(http://hellomido.weebly.com/uploads/2/5/2/6/25268620/1720909701_orig.png); } }
